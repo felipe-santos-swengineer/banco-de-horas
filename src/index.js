@@ -1,12 +1,33 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+//import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import './components/button_upload'
+import UploadButtons from './components/button_upload';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+function primeiroJSX(){
+  return "Upload de HC";
+}
+
+/*
+const App = () => {
+
+  const name = "Felipe Santos"
+
+  return <div className="App">
+      {name}
+      </div>
+}
+*/
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    {<App />}
+    {/*primeiroJSX()*/}
+    {/*UploadButtons*/}
   </React.StrictMode>,
   document.getElementById('root')
 );
